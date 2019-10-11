@@ -46,10 +46,10 @@ rectangle intersection(rectangle r1, rectangle r2) {
   r1.width = right - r1.x;
   r1.height = top - r1.y;
   if ( (r1.width < 0) || (r1.height < 0) ){
-    r1.x = '\0';
-    r1.y = '\0';
-    r1.width = '\0';
-    r1.height = '\0';
+    r1.x = 0;
+    r1.y = 0;
+    r1.width = 0;
+    r1.height = 0;
   }
   return r1;
 }
