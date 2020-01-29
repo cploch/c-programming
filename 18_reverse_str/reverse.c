@@ -35,8 +35,8 @@ strncpy(str, str_new, (count+1));
 }
 
 int main(void) {
-  // char str0[] = "";
-  char * str0 = NULL;
+   char str0[] = "";
+  // char * str0 = NULL;
   char str1[] = "123";
   char str2[] = "abcd";
   char str3[] = "Captain's log, Stardate 42523.7";
