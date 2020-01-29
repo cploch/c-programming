@@ -4,6 +4,12 @@
 
 void reverse(char * str) {
   //char * str_new = str;
+  if (str == NULL){
+    //char empty_str[] = "";
+    // strncpy(str, empty_str, 1);
+    printf("Encountered a null pointer, returning from reverse function\n");
+    return;
+  }
   int count = 0;
   while (str[count] != '\0') {
     count++; //count is size of string (not including null terminator, except when empty)
@@ -29,7 +35,8 @@ strncpy(str, str_new, (count+1));
 }
 
 int main(void) {
-  char str0[] = "";
+  // char str0[] = "";
+  char * str0 = NULL;
   char str1[] = "123";
   char str2[] = "abcd";
   char str3[] = "Captain's log, Stardate 42523.7";
